@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TestingJIG</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link
+      href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css"
+      rel="stylesheet" />
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="container register">
+      <div class="row">
+        <div class="col-md-12">
+          <div
+            class="tab-pane fade show active text-align form-new"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab">
+            <h3 class="register-heading">TestingJIG</h3>
+            <div class="row register-form">
+              <div class="col-md-12">
+                <p>Type correct Details</p>
+                <form
+                  method="post"
+                  autocomplete="off"
+                  name="testJIG"
+                  id="myForm">
+                  Enter First-name and Last-name
+                  <input
+                    type="text"
+                    name="Name"
+                    class="form-control"
+                    placeholder="Your Name*"
+                    value=""
+                    required />
+                  Enter Batch No:
+                  <input
+                    type="number"
+                    name="Batch_No"
+                    class="form-control"
+                    placeholder="Your Batch Number*"
+                    value=""
+                    required />
+                  <input
+                    type="submit"
+                    name="submit"
+                    class="btnSubmit btn-block"
+                    value="Submit" />
+                  <button class="btnSubmit btn-block" onclick="createSheet()">
+                    New Sheet
+                  </button>
+                  <div>
+                    <input
+                      type="submit"
+                      value="Reset"
+                      class="btnSubmit btn-block"
+                      name="Reset" />
+                  </div>
+
+                  <div id="output"></div>
+                  <div class="checkbox">
+                    ESP IS <br />
+                    <input
+                      type="checkbox"
+                      checked
+                      data-toggle="toggle"
+                      data-style="ios" />
+                  </div>
+                  <!-- <input type="checkbox" checked data-toggle="toggle" /> -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
